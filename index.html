@@ -1,0 +1,209 @@
+<!-- This website is created by GROUP 5 members -->
+<!-- Our website is where our photographers upload images regularly. users can buy royalty free images.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="icon" href="../Project/assets/doc icon.png" type="image/icon type">
+    <title>The Bokeh Hub</title>
+</head>
+
+<body>
+    
+    <!-- ----------- NAV BAR ----------- -->
+    <nav class="topnav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Company Logo">
+        </div>
+        <div class="navlink">
+            <a class="topnav-link" href="index.html">Home</a>
+            <a class="topnav-link" href="HTML/about_us.html">About Us</a>
+            <a class="topnav-link" href="HTML/contact_us.html">Contact Us</a>
+        </div>
+        <div class="sign-in_and_logo">
+            <button class="log">Login</button>
+            <button class="reg">Sign up</button>
+            <a class="cart-logo" href="HTML/cart.html"><img src="./assets/icons8-shopping-cart-24.png"></a>
+        </div>
+    </nav>
+
+    <!-- ----------- MAIN ----------- -->
+    <main>
+
+        <!-- --------- search bar container --------- -->
+        <section id="searchtab-position" style="background-image: url('./assets/search-image.jpg');">
+            <p class="searchtab-message">Search from over 8 million images....</p>
+            <input class="input-box" list="mylist" placeholder="What images you looking for?">
+            <datalist id="mylist" title="Trending :">
+                <option value="colors">
+                <option value="magazine">
+                <option value="wildlife">
+                <option value="sunset">
+                <option value="night life">
+            </datalist>
+            <button class="reg input-search-button">Search</button>
+        </section>
+
+        <!-- ------- heading -------- -->
+        <div class="content-header">
+            <h2>CATEGORIES</h2>
+        </div>
+
+        <!-- ------- categories list -------- -->
+        <section id="image-gal">
+            <div class="a">
+                <a href="#birds">
+                    <img src="./assets//bird.jpg">
+                </a>
+            </div>
+            <div class="a">
+                <a href="#landscape">
+                    <img src="./assets//landscape.jpg">
+                </a>
+            </div>
+            <div class="a">
+                <a href="#aesthetic">
+                    <img src="./assets//aesthetic.jpg">
+                </a>
+            </div>
+            <div class="a">
+                <a href="">
+                    <img src="./assets//fashion.jpg">
+                </a>
+            </div>
+        </section>
+
+        <!-- ------- heading -------- -->
+        <div class="content-header">
+            <h2>OUR TOP PHOTOGRAPHERS</h2>
+        </div>
+
+        <!-- ------- profile cards -------- -->
+        <article>
+            <section id="cards">
+                <div class="card">
+                    <img src="./assets/sanjay.jpg" alt="Avatar" style="width:100%">
+                    <div class="spacing">
+                        <h2><b>Sanjay Selvaraj</b></h2>
+                        <h3>Portrait Photographer</h3>
+                        <p>70+ resources added</p>    
+                    </div>
+                </div>
+    
+               <div class="card">
+                    <img src="./assets/THARUN.png" alt="Avatar" style="width:100%">
+                    <div class="spacing">
+                        <h2><b>Tharun Kumar</b></h2>
+                        <h3>Fashion Photographer</h3>
+                        <p>150+ resources added</p>
+                    </div>
+    
+                </div>
+    
+                <div class="card">
+                    <img src="./assets/SATHYA.jpg" alt="Avatar" style="width:100%">
+                    <div class="spacing">
+                        <h2><b>Satya Kumar</b></h2>
+                        <h3>Wildlife Photographer</h3>
+                        <p>100+ resources added</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- ------- Sign in container -------- -->
+        <div class="signin-position">
+            <p class="signin-message">Get access to millions of licensed images with our premium plan starting from
+                <b>49$</b>
+                per month.</p>
+            <p class="signin-position2">Sign Up to know more..... </p>
+            <button class="reg input-search-button">Sign Up</button>
+        </div>
+
+        <!-- ------- heading -------- -->
+        <div class="content-header">
+            <h2>SHOWCASE</h2>
+        </div> 
+
+        <!-- ------- image gallery -------- -->
+        
+        <section id="BIRDS">
+            <div class="content-category">
+                <h2 id="birds">Birds</h2>
+            </div>
+            <ul class="images">
+                <li><a href="./HTML/product.html"> <img src="./assets/bird1.jpg" alt="Snow" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/bird2.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/bird3.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/bird4.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/bird5.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/bird6.jpg" alt="Forest" style="width:100%"></a></li>
+            </ul>
+        </section>
+
+        <section id="LANDSCAPE">
+            <div class="content-category">
+                <h2 id="landscape">Landscape</h2>
+            </div>
+            <ul class="images">
+                <li><a href=""> <img src="./assets/landscape1.jpg" alt="Snow" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/landscape2.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/landscape3.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/landscape4.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/landscape5.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/landscape6.jpg" alt="Forest" style="width:100%"></a></li>
+            </ul>
+        </section>
+
+        <section id="AESTHETIC">
+            <div class="content-category">
+                <h2 id="aesthetic">Aesthetic</h2>
+            </div>
+            <ul class="images">
+                <li><a href=""> <img src="./assets/aesthetic1.jpg" alt="Snow" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/aesthetic2.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/aesthetic3.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/aesthetic4.jpg" alt="Forest" style="width:100%"></a></li>
+                <li><a href=""><img src="./assets/aesthetic5.jpg" alt="Forest" style="width:100%"></a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <br><br><br><br><br><br>
+
+    <!-- ----------- FOOTER ----------- -->
+    <footer>
+        <div class="footer_bg">
+            <h2>Follow Us Here..</h2>
+            <br>
+            <table class="foot_table">
+                <tr>
+                    <td>
+                        <img id="fb" class="fb_img" src="./assets/facebook.png" alt="Facebook Icon">
+                    </td>
+                    <td>
+                        <img id="ig" class="ig_img" src="./assets/instagram.png" alt="Instagram Icon">
+                    </td>
+                    <td>
+                        <img id="twitter" class="tw_img" src="./assets/twitter.png" alt="Twitter Icon">
+                    </td>
+                    <td>
+                        <img id="yt" class="yt_img" src="./assets/youtube.png" alt="Youtube Icon">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <p>&copy; 2023 TheBokehHub Inc.</p>
+            <button id="top_button"><a href="#top">&#8963;</a></button>
+        </div>
+    </footer>
+
+</body>
+
+</html>

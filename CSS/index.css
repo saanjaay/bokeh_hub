@@ -1,0 +1,658 @@
+:root {
+    --pink: #ec008c;
+    --blue: #71cac4;
+    --yellow: #e6bc8f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.company-name h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-size: medium;
+    box-sizing: border-box;
+}
+
+/* ----------- nav bar styles -------- */
+
+.topnav {
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--blue);
+    font-size: smaller;
+}
+
+.topnav .navlink a {
+    font-size: medium;
+}
+
+.topnav:hover {
+    box-shadow: 0 0 10px var(--yellow);
+}
+
+.topnav a:hover {
+    color: var(--navbg);
+}
+
+.topnav-link {
+    float: left;
+    color: var(--blue);
+    text-align: center;
+    padding: 2.5%;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 23%;
+    padding-top: 1%;
+    padding-left: 1%;
+    float: left;
+}
+
+.sign-in_and_logo {
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 5px 10px;
+    padding: 10px 0;
+    box-shadow: 0 0 10px var(--blue);
+    transition: 0.4s;
+}
+
+.reg {
+    color: white;
+    background-color: var(--blue);
+    float: right;
+}
+
+.log {
+    color: var(--blue);
+    background-color: rgba(255, 255, 255, 1);
+    float: right;
+    padding-top: 10px;
+}
+
+button:hover {
+    color: white;
+    box-shadow: 0 0 20px var(--blue);
+    background-color: var(--yellow);
+    box-shadow: 0 0 10px var(--yellow);
+}
+
+.cart-logo {
+    padding: 10px 20px 11px;
+    float: right;
+}
+
+/* ----------- search box styles -------- */
+#searchtab-position {
+    display: grid;
+    place-items: center;
+    margin: 2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.searchtab-message {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: whitesmoke;
+}
+
+.input-box {
+    height: 35px;
+    border-radius: 4px;
+    border: thin;
+    padding-left: 2%;
+}
+
+.input-box:focus {
+    outline: none;
+}
+
+.input-search-button {
+    width: 30%;
+    height: 40px;
+    font-size: large;
+}
+
+.input-search-button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: var(--yellow);
+}
+
+.input-search-button:focus {
+    outline: none;
+}
+
+/* ----------- headings styles -------- */
+.content-header {
+    text-align: center;
+    color: var(--blue);
+    margin-top: 7%;
+}
+
+/* .table-row {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+
+}
+
+td {
+    border-style: hidden;
+} 
+
+ .category {
+    width: 22%;
+    background-repeat: no-repeat;
+} 
+
+ .category:hover {
+    color: white;
+} 
+
+ code {
+    padding-left: 10%;
+} 
+ 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+} 
+
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+ .card h3,
+p {
+    color: grey;
+    padding: 0% 2%;
+}
+
+.card h2 {
+    color: black;
+    padding: 0% 2%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+} 
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card:hover {
+    opacity: 0.8;
+} 
+
+.profile-table {
+    text-align: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}  */
+
+/* .row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+} */
+
+/* ----------- image gallery styles -------- */
+ul.images {
+    margin: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+ul.images li {
+    flex: 0 0 auto;
+    width: 30%;
+    height: 30%;
+    padding-right: 0.5%;
+}
+
+.content-category {
+    text-align: center;
+    color: black;
+    padding-left: 1%;
+    font-size: small;
+}
+
+/* ----------- sign in styles -------- */
+.signin-message {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    color: white;
+}
+
+.signin-position2 {
+    color: white;
+}
+
+/*Style section for Smartphones/Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    button {
+        width: 35%;
+        margin: 1%;
+    }
+
+    /* ----------- profile card styles -------- */
+    #cards {
+        margin: 0 2%;
+        padding: 0 2%;
+    }
+
+    .card {
+        margin: 0 25%;
+        width: 50%;
+        box-shadow: 0 0 6px 0 var(--yellow);
+        text-align: center;
+        font-family: arial;
+    }
+
+    .card .spacing h2,
+    h3,
+    p {
+        padding: 3%;
+        font-size: small;
+    }
+
+    .card .spacing h3,
+    p {
+        color: gray;
+    }
+
+    /* ----------- search bar styles -------- */
+    .input-box {
+        width: 70%;
+        margin-top: 3%;
+    }
+
+    .searchtab-position {
+        padding: 5%;
+    }
+
+    .input-search-button {
+        margin: 5%;
+    }
+
+    /* ----------- categories styles -------- */
+
+    #image-gal {
+        margin: 0 3%;
+    }
+
+    #image-gal img {
+        width: 100%;
+    }
+
+    .a {
+        width: 100%;
+        float: left;
+    }
+
+    #landscape {
+        margin-top: 2%;
+    }
+
+    .signin-position {
+        display: grid;
+        place-items: center;
+        margin: 7% 2% 2% 2%;
+        padding: 2%;
+        text-align: center;
+        background-image: linear-gradient(to right, var(--pink), var(--yellow));
+    }
+
+    /* ----------- footer styles -------- */
+    #fb,
+    #ig,
+    #yt,
+    #twitter {
+        width: 50%;
+        height: 50%;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #71cac4;
+        border-radius: 0.4em;
+        padding-top: 1%;
+    }
+
+    .foot_table {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #top_button {
+        border: none;
+        background: none;
+        font-size: 3em;
+    }
+
+    #top_button a {
+        color: black;
+    }
+
+    #top_button a:visited {
+        text-decoration: none;
+    }
+
+    #top_button a:link {
+        text-decoration: none;
+    }
+
+    #top_button a:active {
+        text-decoration: none;
+    }
+
+    #top_button a:hover {
+        color: #ec008c;
+    }
+
+    /* button {
+        width: 35%;
+        margin: 1%;
+    } */
+
+    /* #image-gal {
+        margin: 0 3%;
+    } */
+
+    /* #image-gal img {
+        width: 100%;
+    } */
+}
+
+/*Style section for Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* button {
+        width: 43%;
+    } */
+
+    button {
+        width: 43%;
+        margin: 1%;
+    }
+
+    .a {
+        width: 50%;
+        float: left;
+        padding: 3%;
+    }
+
+    /* -------  profile card styles ------ */
+    #cards {
+        margin: 0 5%;
+        padding: 0 10%;
+    }
+
+    .card {
+        margin: 0 25%;
+        width: 50%;
+        box-shadow: 0 0 6px 0 var(--yellow);
+        text-align: center;
+        font-family: arial;
+    }
+
+    .card .spacing h2,
+    h3,
+    p {
+        padding: 3%;
+        font-size: small;
+    }
+
+    .card .spacing h3,
+    p {
+        color: gray;
+    }
+
+    /* -------  search bar styles ------ */
+    .input-box {
+        width: 50%;
+        margin-top: 3%;
+    }
+
+    .searchtab-position {
+        padding: 5%;
+    }
+
+    .input-search-button {
+        margin: 1.7%;
+    }
+
+    /* ------- sign in part styles-------- */
+    .signin-position {
+        display: grid;
+        place-items: center;
+        margin: 7% 2% 2% 2%;
+        padding: 2%;
+        background-image: linear-gradient(to right, var(--pink), var(--yellow));
+    }
+
+    /* ------- image gallery styles-------- */
+    #image-gal {
+        display: inline;
+    }
+
+    #image-gal img {
+        width: 100%;
+    }
+
+    /* -----------footer styles-------- */
+    #fb,
+    #ig,
+    #yt,
+    #twitter {
+        width: 35%;
+        height: 35%;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #71cac4;
+        border-radius: 0.4em;
+        padding-top: 1%;
+    }
+
+    .foot_table {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #top_button {
+        border: none;
+        background: none;
+        font-size: 3em;
+    }
+
+    #top_button a {
+        color: black;
+    }
+
+    #top_button a:visited {
+        text-decoration: none;
+    }
+
+    #top_button a:link {
+        text-decoration: none;
+    }
+
+    #top_button a:active {
+        text-decoration: none;
+    }
+
+    #top_button a:hover {
+        color: #ec008c;
+    }
+}
+
+/*Style section for Desktop/large screens*/
+@media only screen and (min-width: 769px) {
+    button {
+        width: 10%;
+    }
+
+    .a {
+        width: 25%;
+    }
+
+    /* ----- profile card styles ------ */
+    #cards {
+        display: flex;
+        padding: 0 10%;
+    }
+
+    .card {
+        width: 33.33%;
+        margin: 0 3%;
+        box-shadow: 0 0 6px 0 var(--yellow);
+        text-align: center;
+        font-family: arial;
+    }
+
+    .card .spacing h2,
+    h3,
+    p {
+        padding: 3%;
+        font-size: large;
+    }
+
+    .card .spacing h3,
+    p {
+        color: gray;
+    }
+
+    /* ----- search bar styles ------ */
+    .input-box {
+        width: 40%;
+    }
+
+    .input-search-button {
+        margin: 1.7%;
+    }
+
+    /* ----- image gallery styles ------ */
+    #image-gal {
+        display: flex;
+        margin: 0 3%;
+    }
+
+    #image-gal img {
+        width: 100%;
+    }
+
+    /* ----------- sign in styles -------- */
+    .signin-position {
+        display: grid;
+        place-items: center;
+        margin: 7% 2% 2% 2%;
+        background-image: linear-gradient(to right, var(--pink), var(--yellow));
+    }
+
+    #fb,
+    #ig,
+    #yt,
+    #twitter {
+        width: 25%;
+        height: 25%;
+    }
+
+    .fb_img,
+    .ig_img,
+    .tw_img,
+    .yt_img {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fb_img:hover,
+    .ig_img:hover,
+    .tw_img:hover,
+    .yt_img:hover {
+        transform: scale(1.2);
+    }
+
+    footer {
+        text-align: center;
+        background-color: #71cac4;
+        border-radius: 0.4em;
+        padding-top: 1%;
+    }
+
+    .foot_table {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+
+    #top_button {
+        border: none;
+        background: none;
+        font-size: 3em;
+    }
+
+    #top_button a {
+        color: black;
+    }
+
+    #top_button a:visited {
+        text-decoration: none;
+    }
+
+    #top_button a:link {
+        text-decoration: none;
+    }
+
+    #top_button a:active {
+        text-decoration: none;
+    }
+
+    #top_button a:hover {
+        color: #ec008c;
+    }
+
+    .content-header h2 {
+        font-size: larger;
+    }
+}
